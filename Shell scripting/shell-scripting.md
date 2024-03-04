@@ -10,7 +10,7 @@
 - using bash command we can execute eg: *script-name.sh*
 - if you what to make it as a command we need to store with out any extension
 - as command in linux when typed the os will search in the path local so using export path=$path+"script-location"
-- you which command to get the script location
+- The above path command let the OS to look in the particular area for the script file.
 - if permission denied make is as executable by using chmod.
 
 ## Variable
@@ -37,21 +37,30 @@ example : $(name)raj
 ## Command line argument and prompting
 
 - We have hard coded the value inside the script in a variable so every time for running different value we need to modify the script and run to overcome that we can use two approches
+  
 - Command line argument : every command you write is taken as a seperate in-built variable starting from 0 and goes on
 example mkdir mathan -> $0 for mkdir and $1 for mathan so we can modify our script to get the command line argument as input from user
-- Through prompting input : Using read *variable-name* we can ask user to give input. for example read -p "enter name" *variable-name* inside the script will ask user to enter name 
+
+- Through prompting input : Using read *variable-name* we can ask user to give input. for example read -p "enter name" *variable-name* inside the script will ask user to enter name
+
+```
+read -p "Enter your name: " username
+```
 
 For making a inclusive design that make the user to aware of what they are doing we need to use prompting otherwise for script reusability we go for command line input
 
 We can use both in a script using flow control.
+
 ## Arthimetic operation
 
 - using expr *expression-with-space-between-them* like " expr 1 + 2 "
-> Note : for multiplication go for "expr 2 /* 3 " as " * " in linux denote -> for all and for variable "expr $A + $B "
+> Note : for multiplication go for "expr 2 /* 3 " as " * " in linux denote -> for all so make it represent multiplication we use backslash.
+> in case of variable "expr $A + $B "
+> Space between symbol are mandatory.
 
 - using double paranthesis : (( 1+2 )) and assign it to variable or using echo command to print there is no need for "/*" and $ for variables. Example : (( 1 * 2 )) ,  ((a+b)) and we can use increment and decrement operator as in c like ((a++)), ((--a)) etc.,
 
-- using pipe bc -l (calculator) to return decimal values example: expr 10/3 | bc -l
+- using pipe bc -l (calculator) to return decimal values example: expr 10 / 3 | bc -l
 
 ## Flow control
 
@@ -73,7 +82,9 @@ fi
 - if and fi denotes the block code for the flow we need to specify if for start and fi for end
 
 - command are usual  like cd, mkdir
-- Condition are conditional operator and specified inside a [ square bracket ] for all shell and for bash and modern shell [[ double square brac]] and has lot more feature
+  
+- Condition are conditional operator and specified inside a [ square bracket ] for all shell and for bash and modern shell [[ double square brac]] and has lot more feature,
+
 > Note always give space inbetween the bracket like [ "a" = "b" ]
 
 ## Conditional operator
