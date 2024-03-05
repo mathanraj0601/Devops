@@ -205,7 +205,7 @@ case <<value>> in
 
 ## Shebang
 
-- some expression or syntax that is mentioned above works well with certain shell so when we share script we need mention to the people which script to run. To overcome this shebang come to pley while starting the script file the first line should be #! *shell-name/location* so that os itself execute it on the shell example : ` #! bin/bash `
+- some expression or syntax that is mentioned above works well with certain shell so when we share script we need mention to the people which script to run. To overcome this shebang come to pley while starting the shell to run the script file the first line should be #! *shell-name/location* so that os itself execute it on the shell example : ` #! bin/bash `
 
 ## Exit code
 Usually when a script fail it update the inbuilt exit variable "?" to non zero number and the variable is always intialized to zero
