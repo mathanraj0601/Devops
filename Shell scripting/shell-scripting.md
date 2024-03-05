@@ -234,13 +234,13 @@ method-name parameter
 
  To get return value inside the function echo the value and when ever called assign it to a variable
 ```
-function definition:
+ // function definition:
 function method-name()
 {
     echo "called"
 }
 
-function calling: 
+ // function calling: 
 result = $(method-name parameter)
 ```
 ## IDE for shell scripts
