@@ -200,8 +200,26 @@ case <<value>> in
         ;;
 ```
 
-" * " : is used to specify default in switch statement
-" ;; ": is like execute the command and break if the value matches
+Note :
+
+- break is used for conditionally moving out of case block example having a while condition inside a case block with break
+
+   ```
+   value ) <<command>>
+         while <<condition>
+         do
+           break
+         done
+        ;;
+  ```
+   
+- ";;" to terminate or indicate the end of the individual block inside the case
+  ```
+   value ) <<command>>
+        ;;
+  ```
+- " * " : is used to specify default in switch statement
+- " ;; ": is like execute the command and break if the value matches
 
 ## Shebang
 
