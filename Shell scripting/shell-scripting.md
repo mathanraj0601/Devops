@@ -233,6 +233,8 @@ Usually when a script fail it update the inbuilt exit variable "?" to non zero n
 - There is no need to specify for success but for failed specify in the script `exit "non-zero-value*` example
 `exit 12`
 
+- To user know the script is failed by mentioning the exit code
+
 ## Function
 - To create a modular script without duplicates
 syntax :
