@@ -267,3 +267,12 @@ result = $(method-name parameter)
 
 - CLI - VIM or VI and check with utility like shellcheck
 - GUI - pycharm,vs,atom,google shell check
+
+
+## Redirection in command
+
+- "<" : input to a command
+- ">" : output to a file
+- "|" : input of one command to another command
+- "<<" : delimiter for multiple line (used alone eith EOF)
+- "<<-" : delimiter with a tab space for better readability  (used alone eith EOF)
