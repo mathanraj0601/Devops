@@ -1,5 +1,5 @@
 variable "storage_account_name" {
-  default = "accountname1"
+  default = "accountname112"
 }
 
 

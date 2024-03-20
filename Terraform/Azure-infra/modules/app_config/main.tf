@@ -3,12 +3,13 @@ module "resource_group" {
 }
 
 provider "azurerm" {
-   features {}
-   
+   features {
+    app_configuration {
+      purge_soft_delete_on_destroy = true
+      recover_soft_deleted         = true
+    }
+   }  
 }
-
-
-
 
 resource "azurerm_app_configuration" "appconf" {
   name                = var.appconfiguration_name
