@@ -1,17 +1,17 @@
 variable "sqlservername" {
-  default = "mysqlservfdger"
+  default = "mysqlserver"
 }
 
 variable "administrator_login" {
-  default = "sqlsedfgrver"
+  default = "sqlserver"
 }
 
 variable "administrator_login_password" {
-  default = "sqlservdfgerpwd"
+  default = "sqlserverpwd"
 }
 
 
 variable "storage_account_name" {
-  default = "sqldsfddfgount"
+  default = "sql_account"
 }
 

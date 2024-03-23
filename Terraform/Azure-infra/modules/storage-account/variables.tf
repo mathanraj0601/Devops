@@ -9,4 +9,5 @@ variable "account_replication_type" {
 }
 
 variable "storage_account_name" {
+  default = ""
 }

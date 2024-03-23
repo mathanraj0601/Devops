@@ -1,26 +1,17 @@
-provider "azurerm" {
-   features {
-    
-   }
-   
-}
-
-
 module "resource_group" {
   source = "../../global/"
 }
 
+
 module "storage_account" {
   source = "../storage-account"
-  storage_account_name = var.storage_account_name
-
 }
+
 
 resource "azurerm_storage_container" "example" {
   name                  = var.storage_container_name
   storage_account_name  = module.storage_account.name
-  container_access_type  = var.container_access_type
-  
+  container_access_type = var.container_access_type
 }
 
 resource "azurerm_storage_blob" "example" {
@@ -28,6 +19,4 @@ resource "azurerm_storage_blob" "example" {
   storage_account_name  = module.storage_account.name
   storage_container_name = azurerm_storage_container.example.name
   type                   = var.blob_type
-  
-  
 }

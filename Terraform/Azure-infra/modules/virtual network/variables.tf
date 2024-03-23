@@ -1,5 +1,5 @@
 variable "virtual_network_name" {
-  default = "vn-name-1"
+  default = ""
   description = "Virtual network name"
 }
 

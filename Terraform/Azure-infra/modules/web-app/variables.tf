@@ -17,3 +17,7 @@ variable "web_app_name" {
 variable "virtual_network_subnet_id" {
   
 }
+
+variable "virtual_network_subnet_cidr" {
+  
+}

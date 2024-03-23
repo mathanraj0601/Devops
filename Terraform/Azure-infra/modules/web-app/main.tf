@@ -20,8 +20,11 @@ resource "azurerm_linux_web_app" "example" {
   resource_group_name = module.resource_group.name
   service_plan_id     = azurerm_service_plan.example.id
   site_config {
-
+    ip_restriction {
+      ip_address = var.virtual_network_subnet_cidr
+      action     = "Allow"
+    }
   }  
   virtual_network_subnet_id = var.virtual_network_subnet_id
-  public_network_access_enabled = true
+  
 }

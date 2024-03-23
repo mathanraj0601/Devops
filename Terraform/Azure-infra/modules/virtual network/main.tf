@@ -3,12 +3,6 @@ module "resource_group" {
 }
 
 
-provider "azurerm" {
-   features {}
-   
-}
-
-
 resource "azurerm_virtual_network" "virtual_network" {
   name = var.virtual_network_name
    location            = module.resource_group.location

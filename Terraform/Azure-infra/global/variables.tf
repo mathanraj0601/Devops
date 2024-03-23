@@ -1,4 +1,4 @@
 variable "azurerm_resource_group_name" {
-  default = "ODL-azure-1272469"
+    default = ""
   description = "The variable hold the common resource group from azure kodekloud"
 }
