@@ -1,0 +1,3 @@
+variable "appconfiguration_name" {
+  
+}
