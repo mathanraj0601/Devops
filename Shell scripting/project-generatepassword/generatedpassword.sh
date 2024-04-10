@@ -1,6 +1,6 @@
     #!/bin/bash
 
-    #<------------------ Password Generator -------------------- ->
+    #<------------------ Password Generator Script-------------------- ->
 
     # Argument Capture
     option1=$1
