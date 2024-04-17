@@ -14,8 +14,8 @@
     #############################
     # Function to print text in color
     # Params are
-    ##  Color eg : red, green
-    ##  message
+    ##  Color eg: red, green
+    ##  Message
     #############################
     function print_color(){
         color="\033[0m"  
@@ -41,9 +41,9 @@
 
 
     #############################
-    # Function to convert number to character 
+    # Function to convert numbers to character 
     # Params are
-    ##  nuumber eg : 1 , 2 etc.,
+    ##  number eg: 1, 2, etc.,
     #############################
     function convert_to_char() {
         if (( $1 >= 1 && $1 <= 26 )); then
@@ -65,7 +65,7 @@
 
 
 
-    # Loop to generated password with input length
+    # Loop to generate password with input length
     while [[ $value2 != 0 ]]
     do
         result=""
