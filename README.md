@@ -1,2 +1,5 @@
 # Devops
-The repositories contains the learning documentation of Devops and pre-requisites
+The repositories contain the learning documentation of Devops and pre-requisites
+- Networking Basics
+- Shell scripting
+- Terraform
